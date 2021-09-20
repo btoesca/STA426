@@ -13,4 +13,4 @@ now let's try with a **reference link** to _google_: [click here to search][sear
 
 
 
-[search engine]: www.google.com
+[search engine]: https://www.google.com/
