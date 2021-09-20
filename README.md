@@ -9,7 +9,9 @@ here is an **inline link** to the _course material repository_: [just click here
 
 now let's try with a **reference link** to _google_: [click here to search][search engine]
 
+the search engine we used is: ![Google](https://www.google.ch/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png)
 
+but we could also have used 
 
 
 
