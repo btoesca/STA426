@@ -1,0 +1,37 @@
+---
+title: "Exercise 1 - part B"
+author: "Beatrice Toesca"
+date: "26 settembre 2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## Generate the sample
+We start sampling 100 values from a log-normal distribution with $\mu=1$ and $\sigma=0.25$:
+```{r sample}
+x <- rlnorm (1000, 1, 0.25)
+```
+
+## Plot the histograms
+We now create a histogram of the sampled distribution...
+```{r histogram, echo=FALSE}
+hist(x, breaks=15, freq=FALSE, col="orange")
+```
+
+... and a histogram of the same distribution on the log scale:
+```{r log histogram, echo=FALSE}
+hist(log(x), breaks=15, freq=FALSE, col=rainbow(15))
+```
+
+## Mean and variance
+At the end we calculate the mean and variance of the sample:
+```{r mean and sd}
+m <- mean(x)
+v <- var(x)
+```
+
+The mean is `r m` and the variance is `r v`.
